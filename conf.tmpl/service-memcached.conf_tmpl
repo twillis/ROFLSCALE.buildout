@@ -1,0 +1,8 @@
+[program:memcached]
+command = ${buildout:directory}/bin/memcached -vvv
+process_name = memcached
+directory = ${buildout:directory}/bin
+priority = 10
+redirect_stderr = true
+environment = LD_LIBRARY_PATH="${buildout:directory}/parts/libevent/lib"
+stdout_logfile = ${buildout:supervisor-log-dir}/memcached.log
