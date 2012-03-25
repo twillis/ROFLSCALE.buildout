@@ -1,1 +1,7 @@
 *.*~
+.installed.cfg
+bin
+conf
+etc
+parts
+var
